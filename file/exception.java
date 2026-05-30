@@ -45,8 +45,8 @@ package file;
 // }
 // }
 
-
-// / QQQ 11.Develop a Java program using throw keyword to validate age for voting.
+// / QQQ 11.Develop a Java program using throw keyword to validate age for
+// voting.
 
 // class Vote {
 // static void checkAge(int age) {
@@ -65,17 +65,15 @@ package file;
 // }
 
 // class vote {
-//     static void checkAge(int age) {
-//         if (age < 50) {
-//         } else {
-//             System.out.println("eligible for voting");
+// static void checkAge(int age) {
+// if (age < 50) {
+// } else {
+// System.out.println("eligible for voting");
 
-//         }
-//     }
-
-//     public static void main(String[] args) {
-//         checkAge(15);
-//     }
+// }
 // }
 
-
+// public static void main(String[] args) {
+// checkAge(15);
+// }
+// }
