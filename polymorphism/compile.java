@@ -24,42 +24,46 @@
 //     }
 // }
 
-class Calculator {
-    int add(int a, int b) {
-        return a + b;
-    }
+// class Calculator {
+//     int add(int a, int b) {
+//         return a + b;
+//     }
 
-    int sub(int a, int b) {
-        return a / b;
-    }
+//     int sub(int a, int b) {
+//         return a / b;
+//     }
 
-    int mul(int a, int b) {
-        return a * b;
-    }
+//     int mul(int a, int b) {
+//         return a * b;
+//     }
 
-    double add(double a, double b) {
-        return a + b;
-    }
+//     double add(double a, double b) {
+//         return a + b;
+//     }
 
-    double div(double a, double b) {
-        return a - b;
-    }
+//     double div(double a, double b) {
+//         return a - b;
+//     }
 
-}
+// }
 
-class Main {
-    public static void main(String[] args) {
+// class Main {
+//     public static void main(String[] args) {
 
-        Calculator c = new Calculator();
+//         Calculator c = new Calculator();
 
-        System.out.println(c.add(3, 4));
+//         System.out.println(c.add(3, 4));
 
-        System.out.println(c.sub(5, 7));
+//         System.out.println(c.sub(5, 7));
 
-        System.out.println(c.mul(8, 9));
+//         System.out.println(c.mul(8, 9));
 
-        System.out.println(c.add(4.6, 6.7));
+//         System.out.println(c.add(4.6, 6.7));
 
-        System.out.println(c.div(4.6, 3.2));
-    }
-}
+//         System.out.println(c.div(4.6, 3.2));
+//     }
+// }
+
+
+
+
