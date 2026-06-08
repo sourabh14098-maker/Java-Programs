@@ -222,50 +222,106 @@ package experiments_java;
 //8.  Create an abstract class Shape with abstract methods area() and perimeter(). Derive
 // classes Circle and Rectangle and implement the methods.
 
-abstract class Shape {
-    abstract void area();
+// abstract class Shape {
+//     abstract void area();
 
-    abstract void perimeter();
-}
+//     abstract void perimeter();
+// }
 
-class Circle extends Shape {
+// class Circle extends Shape {
 
-    double r = 5;
+//     double r = 5;
 
-    void area() {
-        System.out.println("Area of circle : " + (3.14 * r * r));
+//     void area() {
+//         System.out.println("Area of circle : " + (3.14 * r * r));
 
-    }
+//     }
 
-    void perimeter() {
-        System.out.println("perimeter pf circle : " + (2 * 3.14 * r));
-    }
+//     void perimeter() {
+//         System.out.println("perimeter pf circle : " + (2 * 3.14 * r));
+//     }
 
-}
+// }
 
-class Rectangle extends Shape {
-    int length = 5;
-    int breadth = 3;
+// class Rectangle extends Shape {
+//     int length = 5;
+//     int breadth = 3;
 
-    void area() {
-        System.out.println("Area of Rectangular : " + (length * breadth));
-    }
+//     void area() {
+//         System.out.println("Area of Rectangular : " + (length * breadth));
+//     }
 
-    void perimeter() {
-        System.out.println("perimeter of Rectangular : " + 2 * (length * breadth));
-    }
-}
+//     void perimeter() {
+//         System.out.println("perimeter of Rectangular : " + 2 * (length * breadth));
+//     }
+// }
 
-public class Main {
+// public class Main {
+//     public static void main(String[] args) {
+
+//         Circle c = new Circle();
+//         Rectangle r = new Rectangle();
+
+//         c.area();
+//         c.perimeter();
+
+//         r.area();
+//         r.perimeter();
+//     }
+// }
+
+//9. create an interface bank with methods deposit()  and withdraw(). implement it in  class SBI ICIC and AXIS
+
+// interface Bank {
+//     void deposit();
+//     void withdraw();
+// }
+// class SBI implements Bank {
+//     public void deposit() {
+//         System.out.println("SBI Deposit");
+//     }
+//     public void withdraw() {
+//         System.out.println("SBI Withdraw");
+//     }
+// }
+// class ICICI implements Bank {
+//     public void deposit() {
+//         System.out.println("ICICI Deposit");
+//     }
+//     public void withdraw() {
+//         System.out.println("ICICI Withdraw");
+//     }
+// }
+// class AXIS implements Bank {
+//     public void deposit() {
+//         System.out.println("AXIS Deposit");
+//     }
+//     public void withdraw() {
+//         System.out.println("AXIS Withdraw");
+//     }
+// }
+// class Main {
+//     public static void main(String[] args) {
+//         SBI s = new SBI();
+//         s.deposit();
+//         s.withdraw();
+//     }
+// }
+
+// write a program to handle a divide by zero exception using try and catch and finally block 
+
+class Dividebyzero {
     public static void main(String[] args) {
+        int a = 10;
+        int b = 0;
 
-        Circle c = new Circle();
-        Rectangle r = new Rectangle();
-
-        c.area();
-        c.perimeter();
-
-        r.area();
-        r.perimeter();
+        try {
+            int result = a / b;
+            System.out.println("Result : " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Error : division by zero is not allowed");
+        } finally {
+            System.out.println("program continues");
+        }
     }
 }
