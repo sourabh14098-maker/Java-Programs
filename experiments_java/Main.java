@@ -151,35 +151,121 @@ package experiments_java;
 //     }
 // }
 
-// Create classes Vehicle, Car (extends Vehicle), and ElectricCar (extends Car).
+// 6.Create classes Vehicle, Car (extends Vehicle), and ElectricCar (extends Car).
 // Demonstrate multilevel inheritance.
 
-class Vehicle {
-    void sound() {
-        System.out.println("Vehicle drive");
-    }
+// class Vehicle {
+//     void sound() {
+//         System.out.println("Vehicle drive");
+//     }
+// }
+
+// class Car extends Vehicle {
+//     void sound() {
+//         System.out.println("Car is start");
+//     }
+// }
+
+// class ElectricCar extends Car {
+//     void sound() {
+//         System.out.println("Electric Car is charging");
+//     }
+// }
+
+// public class Main {
+//     public static void main(String[] args) {
+//         Vehicle v = new Vehicle();
+//         Car c = new Car();
+//         ElectricCar e = new ElectricCar();
+
+//         v.sound();
+//         c.sound();
+//         e.sound();
+//     }
+// }                                                         #### this code focus on the multilevel inheritance 
+
+// 7.	Demonstrate method overriding using base class Animal and derived classes like Dog, Cat.
+
+// class Animal {
+
+//     void sound() {
+//         System.out.println("Animal makes a sound");
+//     }
+// }
+
+// class Dog extends Animal {
+
+//     void sound() {
+//         System.out.println("Dog barks");
+//     }
+// }
+
+// class Cat extends Animal {
+
+//     void sound() {
+//         System.out.println("Cat meow");
+//     }
+// }
+
+// public class Main {
+
+//     public static void main(String[] args) {
+
+//         Dog d = new Dog();
+//         Cat c = new Cat();
+
+//         d.sound();
+//         c.sound();
+//     }
+// }                                                  ###  this code focus to overriding
+
+//8.  Create an abstract class Shape with abstract methods area() and perimeter(). Derive
+// classes Circle and Rectangle and implement the methods.
+
+abstract class Shape {
+    abstract void area();
+
+    abstract void perimeter();
 }
 
-class Car extends Vehicle {
-    void sound() {
-        System.out.println("Car is start");
+class Circle extends Shape {
+
+    double r = 5;
+
+    void area() {
+        System.out.println("Area of circle : " + (3.14 * r * r));
+
     }
+
+    void perimeter() {
+        System.out.println("perimeter pf circle : " + (2 * 3.14 * r));
+    }
+
 }
 
-class ElectricCar extends Car {
-    void sound() {
-        System.out.println("Electric Car is charging");
+class Rectangle extends Shape {
+    int length = 5;
+    int breadth = 3;
+
+    void area() {
+        System.out.println("Area of Rectangular : " + (length * breadth));
+    }
+
+    void perimeter() {
+        System.out.println("perimeter of Rectangular : " + 2 * (length * breadth));
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        Vehicle v = new Vehicle();
-        Car c = new Car();
-        ElectricCar e = new ElectricCar();
 
-        v.sound();
-        c.sound();
-        e.sound();
+        Circle c = new Circle();
+        Rectangle r = new Rectangle();
+
+        c.area();
+        c.perimeter();
+
+        r.area();
+        r.perimeter();
     }
 }
