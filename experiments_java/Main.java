@@ -106,47 +106,80 @@ package experiments_java;
 //     }
 // }
 
-// Create a base class Person and a derived class Employee. Add relevant attributes and
+// 5. Create a base class Person and a derived class Employee. Add relevant attributes and
 // display method. Demonstrate inheritance.
 
-class Person {
+// class Person {
 
-    String name;
-    int age;
+//     String name;
+//     int age;
 
-    void getPerson(String n, int a) {
-        name = n;
-        age = a;
+//     void getPerson(String n, int a) {
+//         name = n;
+//         age = a;
+//     }
+// }
+
+// class Employee extends Person {
+
+//     int empId;
+//     double salary;
+
+//     void getEmployee(int id, double sal) {
+//         empId = id;
+//         salary = sal;
+//     }
+
+//     void display() {
+//         System.out.println("Name: " + name);
+//         System.out.println("Age: " + age);
+//         System.out.println("Employee ID: " + empId);
+//         System.out.println("Salary: " + salary);
+//     }
+// }
+
+// public class Main {
+
+//     public static void main(String[] args) {
+
+//         Employee e = new Employee();
+
+//         e.getPerson("Rahul", 25);
+//         e.getEmployee(101, 50000);
+
+//         e.display();
+//     }
+// }
+
+// Create classes Vehicle, Car (extends Vehicle), and ElectricCar (extends Car).
+// Demonstrate multilevel inheritance.
+
+class Vehicle {
+    void sound() {
+        System.out.println("Vehicle drive");
     }
 }
 
-class Employee extends Person {
-
-    int empId;
-    double salary;
-
-    void getEmployee(int id, double sal) {
-        empId = id;
-        salary = sal;
+class Car extends Vehicle {
+    void sound() {
+        System.out.println("Car is start");
     }
+}
 
-    void display() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Employee ID: " + empId);
-        System.out.println("Salary: " + salary);
+class ElectricCar extends Car {
+    void sound() {
+        System.out.println("Electric Car is charging");
     }
 }
 
 public class Main {
-
     public static void main(String[] args) {
+        Vehicle v = new Vehicle();
+        Car c = new Car();
+        ElectricCar e = new ElectricCar();
 
-        Employee e = new Employee();
-
-        e.getPerson("Rahul", 25);
-        e.getEmployee(101, 50000);
-
-        e.display();
+        v.sound();
+        c.sound();
+        e.sound();
     }
 }
