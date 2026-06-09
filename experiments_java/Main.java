@@ -1,5 +1,5 @@
 package experiments_java;
-//1 . write a java program to display hello world
+// 1 . write a java program to display hello world
 
 // class helloworld {
 // public static void main(String[] agrs) {
@@ -8,320 +8,361 @@ package experiments_java;
 // }
 // }
 
-//  2 .// Create a class Student with attributes like name, roll number, and grade. Write methods
+// 2 .// Create a class Student with attributes like name, roll number, and
+// grade. Write methods
 // to input and display details of a student.
 
 // import java.util.Scanner;
 
 // class Student {
-//     String name;
-//     int roll;
-//     char grade;
+// String name;
+// int roll;
+// char grade;
 
-//     void input() {
-//         Scanner sc = new Scanner(System.in);
+// void input() {
+// Scanner sc = new Scanner(System.in);
 
-//         System.out.println("Enter name");        name = sc.nextLine();
+// System.out.println("Enter name"); name = sc.nextLine();
 
-//         System.out.println("Enter roll");
-//         roll = sc.nextInt();
+// System.out.println("Enter roll");
+// roll = sc.nextInt();
 
-//         System.out.println("Enter grade");
-//         grade = sc.next().charAt(0);
-//     }
-
-//     void display() {
-//         System.out.println("\nStudent Details");
-//         System.out.println("NAME : " + name);
-//         System.out.println("ROLL : " + roll);
-//         System.out.println("GRADE : " + grade);
-//     }
-
-//     public static void main(String[] args) {
-//         Student s = new Student();
-
-//         s.input();
-//         s.display();
-//     }
+// System.out.println("Enter grade");
+// grade = sc.next().charAt(0);
 // }
 
-// 3.  Demonstrate default constructor and parameterized constructors using a class
+// void display() {
+// System.out.println("\nStudent Details");
+// System.out.println("NAME : " + name);
+// System.out.println("ROLL : " + roll);
+// System.out.println("GRADE : " + grade);
+// }
+
+// public static void main(String[] args) {
+// Student s = new Student();
+
+// s.input();
+// s.display();
+// }
+// }
+
+// 3. Demonstrate default constructor and parameterized constructors using a
+// class
 // Rectangle that calculates area.
 
 // class Rectangle {
-//     int length, breadth;
+// int length, breadth;
 
-//     Rectangle() {
-//         length = 5;
-//         breadth = 4;
+// Rectangle() {
+// length = 5;
+// breadth = 4;
 
-//     }
-
-//     Rectangle(int l, int b) {
-//         length = l;
-//         breadth = b;
-//     }
-
-//     void area() {
-//         System.out.println("Area = " + (length * breadth));
-//     }
-
-//     public static void main(String[] args) {
-
-//         Rectangle r1 = new Rectangle();
-//         Rectangle r2 = new Rectangle(10, 8);
-
-//         System.out.println("using default constructor");
-//         r1.area();
-
-//         System.out.println("using parameterized");
-//         r2.area();
-//     }
 // }
 
-// 4. Write a Java program to show method overloading for calculating area of different
+// Rectangle(int l, int b) {
+// length = l;
+// breadth = b;
+// }
+
+// void area() {
+// System.out.println("Area = " + (length * breadth));
+// }
+
+// public static void main(String[] args) {
+
+// Rectangle r1 = new Rectangle();
+// Rectangle r2 = new Rectangle(10, 8);
+
+// System.out.println("using default constructor");
+// r1.area();
+
+// System.out.println("using parameterized");
+// r2.area();
+// }
+// }
+
+// 4. Write a Java program to show method overloading for calculating area of
+// different
 // shapes (circle, rectangle, triangle).
 
 // class Area {
 
-//     void area(double r) {
-//         System.out.println("Area of Circle = " + (3.14 * r * r));
-//     }
-
-//     void area(int l, int b) {
-//         System.out.println("Area of Rectangle = " + (l * b));
-//     }
-
-//     void area(int b, int h, int x) {
-//         System.out.println("Area of Triangle = " + (0.5 * b * h));
-//     }
-
-//     public static void main(String[] args) {
-
-//         Area a = new Area();
-
-//         a.area(5.0); // Circle
-//         a.area(10, 6); // Rectangle
-//         a.area(8, 4, 1); // Triangle
-//     }
+// void area(double r) {
+// System.out.println("Area of Circle = " + (3.14 * r * r));
 // }
 
-// 5. Create a base class Person and a derived class Employee. Add relevant attributes and
+// void area(int l, int b) {
+// System.out.println("Area of Rectangle = " + (l * b));
+// }
+
+// void area(int b, int h, int x) {
+// System.out.println("Area of Triangle = " + (0.5 * b * h));
+// }
+
+// public static void main(String[] args) {
+
+// Area a = new Area();
+
+// a.area(5.0); // Circle
+// a.area(10, 6); // Rectangle
+// a.area(8, 4, 1); // Triangle
+// }
+// }
+
+// 5. Create a base class Person and a derived class Employee. Add relevant
+// attributes and
 // display method. Demonstrate inheritance.
 
 // class Person {
 
-//     String name;
-//     int age;
+// String name;
+// int age;
 
-//     void getPerson(String n, int a) {
-//         name = n;
-//         age = a;
-//     }
+// void getPerson(String n, int a) {
+// name = n;
+// age = a;
+// }
 // }
 
 // class Employee extends Person {
 
-//     int empId;
-//     double salary;
+// int empId;
+// double salary;
 
-//     void getEmployee(int id, double sal) {
-//         empId = id;
-//         salary = sal;
-//     }
+// void getEmployee(int id, double sal) {
+// empId = id;
+// salary = sal;
+// }
 
-//     void display() {
-//         System.out.println("Name: " + name);
-//         System.out.println("Age: " + age);
-//         System.out.println("Employee ID: " + empId);
-//         System.out.println("Salary: " + salary);
-//     }
+// void display() {
+// System.out.println("Name: " + name);
+// System.out.println("Age: " + age);
+// System.out.println("Employee ID: " + empId);
+// System.out.println("Salary: " + salary);
+// }
 // }
 
 // public class Main {
 
-//     public static void main(String[] args) {
+// public static void main(String[] args) {
 
-//         Employee e = new Employee();
+// Employee e = new Employee();
 
-//         e.getPerson("Rahul", 25);
-//         e.getEmployee(101, 50000);
+// e.getPerson("Rahul", 25);
+// e.getEmployee(101, 50000);
 
-//         e.display();
-//     }
+// e.display();
+// }
 // }
 
-// 6.Create classes Vehicle, Car (extends Vehicle), and ElectricCar (extends Car).
+// 6.Create classes Vehicle, Car (extends Vehicle), and ElectricCar (extends
+// Car).
 // Demonstrate multilevel inheritance.
 
 // class Vehicle {
-//     void sound() {
-//         System.out.println("Vehicle drive");
-//     }
+// void sound() {
+// System.out.println("Vehicle drive");
+// }
 // }
 
 // class Car extends Vehicle {
-//     void sound() {
-//         System.out.println("Car is start");
-//     }
+// void sound() {
+// System.out.println("Car is start");
+// }
 // }
 
 // class ElectricCar extends Car {
-//     void sound() {
-//         System.out.println("Electric Car is charging");
-//     }
+// void sound() {
+// System.out.println("Electric Car is charging");
+// }
 // }
 
 // public class Main {
-//     public static void main(String[] args) {
-//         Vehicle v = new Vehicle();
-//         Car c = new Car();
-//         ElectricCar e = new ElectricCar();
+// public static void main(String[] args) {
+// Vehicle v = new Vehicle();
+// Car c = new Car();
+// ElectricCar e = new ElectricCar();
 
-//         v.sound();
-//         c.sound();
-//         e.sound();
-//     }
-// }                                                         #### this code focus on the multilevel inheritance 
+// v.sound();
+// c.sound();
+// e.sound();
+// }
+// } #### this code focus on the multilevel inheritance
 
-// 7.	Demonstrate method overriding using base class Animal and derived classes like Dog, Cat.
+// 7. Demonstrate method overriding using base class Animal and derived classes
+// like Dog, Cat.
 
 // class Animal {
 
-//     void sound() {
-//         System.out.println("Animal makes a sound");
-//     }
+// void sound() {
+// System.out.println("Animal makes a sound");
+// }
 // }
 
 // class Dog extends Animal {
 
-//     void sound() {
-//         System.out.println("Dog barks");
-//     }
+// void sound() {
+// System.out.println("Dog barks");
+// }
 // }
 
 // class Cat extends Animal {
 
-//     void sound() {
-//         System.out.println("Cat meow");
-//     }
+// void sound() {
+// System.out.println("Cat meow");
+// }
 // }
 
 // public class Main {
 
-//     public static void main(String[] args) {
+// public static void main(String[] args) {
 
-//         Dog d = new Dog();
-//         Cat c = new Cat();
+// Dog d = new Dog();
+// Cat c = new Cat();
 
-//         d.sound();
-//         c.sound();
-//     }
-// }                                                  ###  this code focus to overriding
+// d.sound();
+// c.sound();
+// }
+// } ### this code focus to overriding
 
-//8.  Create an abstract class Shape with abstract methods area() and perimeter(). Derive
+// 8. Create an abstract class Shape with abstract methods area() and
+// perimeter(). Derive
 // classes Circle and Rectangle and implement the methods.
 
 // abstract class Shape {
-//     abstract void area();
+// abstract void area();
 
-//     abstract void perimeter();
+// abstract void perimeter();
 // }
 
 // class Circle extends Shape {
 
-//     double r = 5;
+// double r = 5;
 
-//     void area() {
-//         System.out.println("Area of circle : " + (3.14 * r * r));
+// void area() {
+// System.out.println("Area of circle : " + (3.14 * r * r));
 
-//     }
+// }
 
-//     void perimeter() {
-//         System.out.println("perimeter pf circle : " + (2 * 3.14 * r));
-//     }
+// void perimeter() {
+// System.out.println("perimeter pf circle : " + (2 * 3.14 * r));
+// }
 
 // }
 
 // class Rectangle extends Shape {
-//     int length = 5;
-//     int breadth = 3;
+// int length = 5;
+// int breadth = 3;
 
-//     void area() {
-//         System.out.println("Area of Rectangular : " + (length * breadth));
-//     }
+// void area() {
+// System.out.println("Area of Rectangular : " + (length * breadth));
+// }
 
-//     void perimeter() {
-//         System.out.println("perimeter of Rectangular : " + 2 * (length * breadth));
-//     }
+// void perimeter() {
+// System.out.println("perimeter of Rectangular : " + 2 * (length * breadth));
+// }
 // }
 
 // public class Main {
-//     public static void main(String[] args) {
+// public static void main(String[] args) {
 
-//         Circle c = new Circle();
-//         Rectangle r = new Rectangle();
+// Circle c = new Circle();
+// Rectangle r = new Rectangle();
 
-//         c.area();
-//         c.perimeter();
+// c.area();
+// c.perimeter();
 
-//         r.area();
-//         r.perimeter();
-//     }
+// r.area();
+// r.perimeter();
+// }
 // }
 
-//9. create an interface bank with methods deposit()  and withdraw(). implement it in  class SBI ICIC and AXIS
+// 9. create an interface bank with methods deposit() and withdraw(). implement
+// it in class SBI ICIC and AXIS
 
 // interface Bank {
-//     void deposit();
-//     void withdraw();
+// void deposit();
+// void withdraw();
 // }
 // class SBI implements Bank {
-//     public void deposit() {
-//         System.out.println("SBI Deposit");
-//     }
-//     public void withdraw() {
-//         System.out.println("SBI Withdraw");
-//     }
+// public void deposit() {
+// System.out.println("SBI Deposit");
+// }
+// public void withdraw() {
+// System.out.println("SBI Withdraw");
+// }
 // }
 // class ICICI implements Bank {
-//     public void deposit() {
-//         System.out.println("ICICI Deposit");
-//     }
-//     public void withdraw() {
-//         System.out.println("ICICI Withdraw");
-//     }
+// public void deposit() {
+// System.out.println("ICICI Deposit");
+// }
+// public void withdraw() {
+// System.out.println("ICICI Withdraw");
+// }
 // }
 // class AXIS implements Bank {
-//     public void deposit() {
-//         System.out.println("AXIS Deposit");
-//     }
-//     public void withdraw() {
-//         System.out.println("AXIS Withdraw");
-//     }
+// public void deposit() {
+// System.out.println("AXIS Deposit");
+// }
+// public void withdraw() {
+// System.out.println("AXIS Withdraw");
+// }
 // }
 // class Main {
-//     public static void main(String[] args) {
-//         SBI s = new SBI();
-//         s.deposit();
-//         s.withdraw();
-//     }
+// public static void main(String[] args) {
+// SBI s = new SBI();
+// s.deposit();
+// s.withdraw();
+// }
 // }
 
-// write a program to handle a divide by zero exception using try and catch and finally block 
+// 10. write a program to handle a divide by zero exception using try and catch
+// and finally block
 
-class Dividebyzero {
-    public static void main(String[] args) {
-        int a = 10;
-        int b = 0;
+// class Dividebyzero {
+// public static void main(String[] args) {
 
-        try {
-            int result = a / b;
-            System.out.println("Result : " + result);
-        } catch (ArithmeticException e) {
-            System.out.println("Error : division by zero is not allowed");
-        } finally {
-            System.out.println("program continues");
-        }
-    }
-}
+// int a = 10;
+// int b = 0;
+
+// try {
+
+// int result = a / b;
+
+// System.out.println("Result : " + result);
+
+// } catch (ArithmeticException e) {
+
+// System.out.println("Error : division by zero is not allowed");
+
+// } finally {
+// System.out.println("program continues");
+
+// }
+// }
+// }
+
+// 11. Search for a given element in an array using linear search
+
+// class LinearSearch {
+
+// public static void main(String[] args) {
+
+// int arr[] = {10, 20, 30, 40, 50};
+// int key = 40;
+// int found = 0;
+
+// for (int i = 0; i < arr.length; i++) {
+
+// if (arr[i] == key) {
+// System.out.println("Element found at index " + i);
+// found = 1;
+// break;
+// }
+// }
+
+// if (found == 0) {
+// System.out.println("Element not found");
+// }
+// }
+// }
