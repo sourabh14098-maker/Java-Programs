@@ -366,3 +366,18 @@ package experiments_java;
 // }
 // }
 // }
+
+// 12. implement string reverse without using built in function
+
+// class ReverseString {
+// public static void main(String[] args){
+// String str = "HELLO";
+
+// System.out.println("Reverse string = ");
+
+// for(int i = str.length() -1; i >=0; i--) {
+// System.out.println(str.charAt(i));
+// }
+
+// }
+// }
