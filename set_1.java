@@ -18,9 +18,6 @@
 //     }
 // }
 
-
-
-
 //  Java Program Demonstrating Multilevel Inheritance
 
 // class Vehicle {
@@ -52,4 +49,15 @@
 //     }
 // }
 
+// Q8. Write a Java Program Using throws Keyword. (3 Marks)
 
+class Demo {
+
+    static void test() throws ArithmeticException {
+        throw new ArithmeticException("Error");
+    }
+
+    public static void main(String[] args) {
+        test();
+    }
+}
