@@ -51,13 +51,32 @@
 
 // Q8. Write a Java Program Using throws Keyword. (3 Marks)
 
-class Demo {
+// class Demo {
 
-    static void test() throws ArithmeticException {
-        throw new ArithmeticException("Error");
-    }
+//     static void test() throws ArithmeticException {
+//         throw new ArithmeticException("Error");
+//     }
 
+//     public static void main(String[] args) {
+//         test();
+//     }
+// }
+
+// Q10. Write a Java Program Using HashSet. (3 Marks)
+
+// HashSet is a class in Java that stores unique elements (no duplicates allowed). 
+// It is part of the Java Collections Framework and uses a hash table internally for fast storage and retrieval.
+
+import java.util.HashSet;
+
+class main {
     public static void main(String[] args) {
-        test();
+
+        HashSet<String> hs = new HashSet<>();
+
+        hs.add("java");
+        hs.add("python");
+
+        System.out.println(hs);
     }
 }
