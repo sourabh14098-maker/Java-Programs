@@ -67,16 +67,21 @@
 // HashSet is a class in Java that stores unique elements (no duplicates allowed). 
 // It is part of the Java Collections Framework and uses a hash table internally for fast storage and retrieval.
 
-import java.util.HashSet;
+// import java.util.HashSet;
 
-class main {
-    public static void main(String[] args) {
+// class main {
+//     public static void main(String[] args) {
 
-        HashSet<String> hs = new HashSet<>();
+//         HashSet<String> hs = new HashSet<>();
 
-        hs.add("java");
-        hs.add("python");
+//         hs.add("java");
+//         hs.add("python");
 
-        System.out.println(hs);
-    }
-}
+//         System.out.println(hs);
+//     }
+// }
+
+
+// LONG ANSWER CODE STARTS FROM HERE (14 MARKS)
+
+ 
