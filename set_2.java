@@ -383,18 +383,42 @@
 // Definition
 // Set is a collection that does not allow duplicate elements.
 
-import java.util.HashSet;
+// import java.util.HashSet;
 
-class Main {
+// class Main {
+
+//     public static void main(String[] args) {
+
+//         HashSet<String> set = new HashSet<>();
+
+//         set.add("maths");
+//         set.add("javascript");
+
+//         System.out.println(set);
+
+//     } 
+// }
+
+class Adittion {
+
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    double add(double a, double b) {
+        return a + b;
+    }
 
     public static void main(String[] args) {
 
-        HashSet<String> set = new HashSet<>();
+        Adittion a = new Adittion();
 
-        set.add("maths");
-        set.add("javascript");
-
-        System.out.println(set);
-
+        System.out.println(a.add(3, 5));
+        System.out.println(a.add(6, 7));
+        System.out.println(a.add(5.7, 5.4));
     }
 }
