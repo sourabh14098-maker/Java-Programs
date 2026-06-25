@@ -311,9 +311,90 @@
 // Definition
 // The throw keyword is used to explicitly create and throw an exception.
 
+// class Main {
+//     public static void main(String[] args) {
+
+//         throw new ArithmeticException("custom exception");
+//     }
+// }
+
+// throws Keyword
+
+// Definition
+// The throws keyword is used in the method declaration to indicate that a method may throw an exception.
+
+// class Demo {
+//     static void test() throws ArithmeticException  {
+
+//         throw new   ArithmeticException("Error");
+
+//     }
+//     public static void main(String[] args){
+
+//         test();
+//     }
+// }
+
+// MODULE – 5: Java Collections and Advanced Topics
+
+//  List Interface
+
+// Definition
+// A List is an ordered collection that allows duplicate elements.
+
+// import java.util.*;
+
+// class Main {
+
+//     public static void main(String[] args) {
+
+//         ArrayList<String> list = new ArrayList<>();
+
+//         list.add("Java");
+//         list.add("Python");
+//         list.add("C++");
+
+//         System.out.println(list);
+//     }
+// }
+
+// LinkedList
+
+// Definition
+// LinkedList stores elements using nodes connected by links.
+
+// import java.util.LinkedList;
+
+// class Main {
+//     public static void main(String[] args) {
+
+//         LinkedList<String> list = new LinkedList<>();
+
+//         list.add("python");
+//         list.add("java");
+//         list.add("c++");
+
+//         System.out.println(list);
+//     }
+// }
+
+// Set Interface
+
+// Definition
+// Set is a collection that does not allow duplicate elements.
+
+import java.util.HashSet;
+
 class Main {
+
     public static void main(String[] args) {
 
-        throw new ArithmeticException("custom exception");
+        HashSet<String> set = new HashSet<>();
+
+        set.add("maths");
+        set.add("javascript");
+
+        System.out.println(set);
+
     }
 }
