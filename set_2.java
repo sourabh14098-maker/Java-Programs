@@ -263,24 +263,24 @@
 // 4. try-catch Program
 
 // class Main {
-//     public static void main(String[] args){
+// public static void main(String[] args){
 
-//         int a = 10;
-//         int b = 0;
+// int a = 10;
+// int b = 0;
 
-//         try {
-//             int c = a / b;
+// try {
+// int c = a / b;
 
-//             System.out.println(c);
+// System.out.println(c);
 
-//         }
+// }
 
-//         catch(ArithmeticException e){
-//             System.out.println("cannot divide by zero");
+// catch(ArithmeticException e){
+// System.out.println("cannot divide by zero");
 
-//         }
+// }
 
-//     }
+// }
 // }
 
 // finally Block
@@ -289,21 +289,21 @@
 // The finally block always executes whether an exception occurs or not.
 
 // class Main {
-//     public static void main(String[] args){
+// public static void main(String[] args){
 
-//         try {
-//             int a = 10 / 0;
+// try {
+// int a = 10 / 0;
 
-//         }
-//         catch(ArithmeticException e) {
-//             System.out.println("divison by zero is not allowed");
+// }
+// catch(ArithmeticException e) {
+// System.out.println("divison by zero is not allowed");
 
-//         }
-//         finally {
-//             System.out.println("operation completed");
+// }
+// finally {
+// System.out.println("operation completed");
 
-//         }
-//     }
+// }
+// }
 // }
 
 // hrow Keyword
@@ -312,32 +312,33 @@
 // The throw keyword is used to explicitly create and throw an exception.
 
 // class Main {
-//     public static void main(String[] args) {
+// public static void main(String[] args) {
 
-//         throw new ArithmeticException("custom exception");
-//     }
+// throw new ArithmeticException("custom exception");
+// }
 // }
 
 // throws Keyword
 
 // Definition
-// The throws keyword is used in the method declaration to indicate that a method may throw an exception.
+// The throws keyword is used in the method declaration to indicate that a
+// method may throw an exception.
 
 // class Demo {
-//     static void test() throws ArithmeticException  {
+// static void test() throws ArithmeticException {
 
-//         throw new   ArithmeticException("Error");
+// throw new ArithmeticException("Error");
 
-//     }
-//     public static void main(String[] args){
+// }
+// public static void main(String[] args){
 
-//         test();
-//     }
+// test();
+// }
 // }
 
 // MODULE – 5: Java Collections and Advanced Topics
 
-//  List Interface
+// List Interface
 
 // Definition
 // A List is an ordered collection that allows duplicate elements.
@@ -346,16 +347,16 @@
 
 // class Main {
 
-//     public static void main(String[] args) {
+// public static void main(String[] args) {
 
-//         ArrayList<String> list = new ArrayList<>();
+// ArrayList<String> list = new ArrayList<>();
 
-//         list.add("Java");
-//         list.add("Python");
-//         list.add("C++");
+// list.add("Java");
+// list.add("Python");
+// list.add("C++");
 
-//         System.out.println(list);
-//     }
+// System.out.println(list);
+// }
 // }
 
 // LinkedList
@@ -366,16 +367,16 @@
 // import java.util.LinkedList;
 
 // class Main {
-//     public static void main(String[] args) {
+// public static void main(String[] args) {
 
-//         LinkedList<String> list = new LinkedList<>();
+// LinkedList<String> list = new LinkedList<>();
 
-//         list.add("python");
-//         list.add("java");
-//         list.add("c++");
+// list.add("python");
+// list.add("java");
+// list.add("c++");
 
-//         System.out.println(list);
-//     }
+// System.out.println(list);
+// }
 // }
 
 // Set Interface
@@ -387,38 +388,62 @@
 
 // class Main {
 
-//     public static void main(String[] args) {
+// public static void main(String[] args) {
 
-//         HashSet<String> set = new HashSet<>();
+// HashSet<String> set = new HashSet<>();
 
-//         set.add("maths");
-//         set.add("javascript");
+// set.add("maths");
+// set.add("javascript");
 
-//         System.out.println(set);
+// System.out.println(set);
 
-//     } 
+// }
 // }
 
-class Adittion {
+// class Adittion {
 
-    int add(int a, int b) {
-        return a + b;
-    }
+// int add(int a, int b) {
+// return a + b;
+// }
 
-    int add(int a, int b, int c) {
-        return a + b + c;
-    }
+// int add(int a, int b, int c) {
+// return a + b + c;
+// }
 
-    double add(double a, double b) {
-        return a + b;
-    }
+// double add(double a, double b) {
+// return a + b;
+// }
 
-    public static void main(String[] args) {
+// public static void main(String[] args) {
 
-        Adittion a = new Adittion();
+// Adittion a = new Adittion();
 
-        System.out.println(a.add(3, 5));
-        System.out.println(a.add(6, 7));
-        System.out.println(a.add(5.7, 5.4));
-    }
-}
+// System.out.println(a.add(3, 5));
+// System.out.println(a.add(6, 7));
+// System.out.println(a.add(5.7, 5.4));
+// }
+// }
+
+// class Student {
+
+// private String name;
+
+// public void setName(String n) {
+// name = n;
+// }
+
+// public String getName() {
+// return name;
+// }
+// }
+
+// class Main {
+// public static void main(String[] args) {
+
+// Student s = new Student();
+
+// s.setName("Rahul");
+
+// System.out.println(s.getName());
+// }
+// }
